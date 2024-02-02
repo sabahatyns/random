@@ -8,6 +8,7 @@ import CountriesData from './screens/countries';
 import { Alert } from 'react-native';
 import messaging from '@react-native-firebase/messaging';
 import { getToken, notificationListenr, requestUserPermission } from './src/utils/pushnotifications';
+import Reels from './screens/reels';
 
 
 const Stack = createNativeStackNavigator();
@@ -48,6 +49,7 @@ export function DrawerNavigator() {
     <Drawer.Navigator >
       <Drawer.Screen name="Qr Code Scanner" component={Qrscanner} />
       <Drawer.Screen name="Countries Code" component={CountriesData} />  
+      <Drawer.Screen name="Reels" component={Reels} />  
     </Drawer.Navigator>
   );
 }
