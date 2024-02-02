@@ -6,7 +6,7 @@ import { getToken, notificationListenr, requestUserPermission } from './src/util
 
 
 
-export default function Mycal() {
+export default function CountriesData() {
   //initial state
   const [input, setInput] = useState('');
   const [Data, setData] = useState(peopleData);
