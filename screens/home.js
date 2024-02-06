@@ -21,6 +21,7 @@ const First = () => {
                         // position: 'relative',
                         // backgroundColor: 'black',
                     }}>
+                        {/* //header */}
                     <View
                         style={styles.container11}>
 
@@ -28,8 +29,8 @@ const First = () => {
                         <Text style={{ fontSize: 40, fontWeight: '100', color: 'black', }}> ZIMO</Text>
                         <Feather name="lock" style={{ paddingTop: 10, fontSize: 20, color: 'black' }} />
                     </View>
+                    {/* stories section */}
                     <View style={{ height: 1, marginTop: 55, backgroundColor: 'grey', opacity: 0.2 }}></View>
-                    {/* <View style={{ flexDirection: 'column' }}> */}
                     <View style={{ flexDirection: 'row', margin: 10, }}>
                         <ScrollView horizontal={true}
                             showsHorizontalScrollIndicator={false}
@@ -55,6 +56,7 @@ const First = () => {
                             </ImageBackground>
                         </ScrollView>
                     </View>
+                    {/* card section */}
                     <View>
                         <ImageBackground style={styles.bg}
                             source={require('../assets/Rectangle5.png')}
