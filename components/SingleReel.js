@@ -3,7 +3,7 @@ import {View, Text, Dimensions, TouchableOpacity, Image} from 'react-native';
 import Video from 'react-native-video';
 import Ionic from 'react-native-vector-icons/Ionicons';
 import AntDesign from 'react-native-vector-icons/AntDesign';
-// import Feather from 'react-native-vector-icons/Feather';
+import Feather from 'react-native-vector-icons/Feather';
 
 const SingleReel = ({item, index, currentIndex}) => {
   const windowWidth = Dimensions.get('window').width;
@@ -117,7 +117,7 @@ const SingleReel = ({item, index, currentIndex}) => {
           bottom: 10, //edited
           right: 0,
         }}>
-        {/* <TouchableOpacity onPress={() => setLike(!like)} style={{padding: 10}}>
+        <TouchableOpacity onPress={() => setLike(!like)} style={{padding: 10}}>
           <AntDesign
             name={like ? 'heart' : 'hearto'}
             style={{color: like ? 'red' : 'white', fontSize: 25}}
@@ -129,19 +129,19 @@ const SingleReel = ({item, index, currentIndex}) => {
             name="ios-chatbubble-outline"
             style={{color: 'white', fontSize: 25}}
           />
-        </TouchableOpacity> */}
-        {/* <TouchableOpacity style={{padding: 10}}>
+        </TouchableOpacity> 
+         <TouchableOpacity style={{padding: 10}}>
           <Ionic
             name="paper-plane-outline"
             style={{color: 'white', fontSize: 25}}
           />
-        </TouchableOpacity> */}
-        {/* <TouchableOpacity style={{padding: 10}}>
+        </TouchableOpacity>
+         <TouchableOpacity style={{padding: 10}}>
           <Feather
             name="more-vertical"
             style={{color: 'white', fontSize: 25}}
           />
-        </TouchableOpacity> */}
+        </TouchableOpacity>
         <View
           style={{
             width: 30,
