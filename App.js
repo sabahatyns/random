@@ -13,6 +13,11 @@ import Bugatti from './screens/Bugatti';
 import { createBottomTabNavigator } from '@react-navigation/bottom-tabs';
 import Icon from 'react-native-vector-icons/FontAwesome';
 import First from './screens/home';
+import Chat from './screens/chat';
+import Meet from './screens/meet';
+
+
+
 
 
 
@@ -87,7 +92,7 @@ const Bugatti5 = () => {
         tabBarIcon: ({ color, size }) => (
           <Icon name="home" color={color} size={size} />
         ),
-      }} name="First" component={First} />
+      }} name="meet" component={Meet} />
       <Tab.Screen options={{
         tabBarIcon: ({ color, size }) => (
           <Icon name="play" color={color} size={size} />

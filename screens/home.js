@@ -3,7 +3,8 @@ import { View, Text, Image, TouchableOpacity, ImageBackground, ScrollView, Dimen
 import Icon from 'react-native-vector-icons/FontAwesome';
 import Feather from 'react-native-vector-icons/Feather';
 import LinearGradient from 'react-native-linear-gradient';
-import Story from '../components/stories';
+// import Story from '../components/stories';
+import CountDown from 'react-native-countdown-component';
 
 
 const First = () => {
@@ -69,7 +70,21 @@ const First = () => {
                                 }}
                             >
                                 <View>
-                                    <View style={{ flexDirection: 'row', padding: 10 }}>
+                             
+   
+      <CountDown
+        until={6739200}
+        onFinish={() => alert('finished')}
+        // onPress={() => alert('hello')}
+        digitStyle={{backgroundColor: 'transparent', marginLeft:12}}
+        digitTxtStyle={{color: 'white',letterSpacing:5,opacity:0.9,fontSize:35,fontWeight:'100',}}
+        timeLabelStyle={{color: 'white',letterSpacing:1,marginLeft:15, fontWeight: 'normal',fontSize:10, paddingBottom:16,marginTop:-12}}
+       timeToShow={['D','H', 'M', 'S']}
+       timeLabels={{d:'DAYS',h:'HOURS' ,m: 'MINUTES', s: 'SECONDS'}}
+
+       size={25}
+      />
+                                      {/* <View style={{ flexDirection: 'row', padding: 10 }}>
                                         <View style={styles.all}>
                                             <Text style={styles.text1}>78
                                             </Text>
@@ -90,7 +105,7 @@ const First = () => {
                                             </Text>
                                             <Text style={styles.text2}>SECONDS</Text>
                                         </View>
-                                    </View>
+                                    </View> */}
                                     <View styles={{ flexDirection: 'row' }}>
                                         <Feather name="corner-up-right" style={styles.icon1} />
                                         <Icon name="heart" style={styles.icon} />
@@ -221,26 +236,26 @@ const styles = StyleSheet.create({
     icon: {
         fontSize: 25,
         color: '#880808',
-        paddingLeft: 215,
+        paddingLeft: 255,
         marginTop: -25,
     },
     icon1: {
         fontSize: 25,
         color: 'white',
         fontWeight: '700',
-        marginLeft: 175
+        marginLeft: 215
     },
     icon5: {
         zIndex: 5, color: 'white',
         margin: 5,
-        fontSize: 15,
-        marginTop: 125,
+        fontSize: 10,
+        marginTop: 145,
     },
     icon0: {
         zIndex: 5, color: 'white',
         margin: 5,
-        fontSize: 15,
-        marginTop: 90,
+        fontSize: 10,
+        marginTop: 110,
     },
     area: {
         color: 'white',
